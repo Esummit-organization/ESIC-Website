@@ -55,7 +55,7 @@
 
 ## Sample Git Workflow
 
-- Create a new feature branch with `git checkout -b <name-of-your-feature-branch>`
+- Create a new feature branch with `git checkout -b <name-of-your-feature-branch>` or if the branch is already created (which would mostly be the case), use `git checkout <branch-name>`
 - Make changes and commit them in the feature branch.
 - Once done developing, switch back to the main branch with `git checkout main` ; pull the latest version of the repo with `git pull https://github.com/Esummit-organization/ESIC-Website.git main`
 - Switch back to the feature branch with `git checkout <name-of-your-feature-branch>`. Apply the new changes on top of the latest version of the repo with `git rebase main`
