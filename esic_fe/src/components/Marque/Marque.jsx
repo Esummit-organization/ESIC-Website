@@ -1,9 +1,9 @@
 import React from "react";
 
-export function About() {
+export function MarqueScroll() {
     return (
         <div className="text-secondary-900">
-            About Us
+            Marque Scroll use from Aceternity UI
         </div>
     );
     }

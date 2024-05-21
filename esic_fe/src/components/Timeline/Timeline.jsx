@@ -1,9 +1,9 @@
 import React from "react";
 
-export function About() {
+export function Timeline() {
     return (
         <div className="text-secondary-900">
-            About Us
+            Timeline
         </div>
     );
     }

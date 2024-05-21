@@ -1,9 +1,10 @@
 import React from "react";
 
-export function About() {
+
+export function FAQ() {
     return (
         <div className="text-secondary-900">
-            About Us
+            FAQ
         </div>
     );
     }

@@ -2,8 +2,8 @@ import React from "react";
 
 export function Hero() {
     return (
-        <div>
-            Hero
+        <div className=" bg-hero-50">
+            Hero Section With Parallax Mountain and Text
         </div>
     );
     }

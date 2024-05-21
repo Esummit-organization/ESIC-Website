@@ -2,7 +2,7 @@ import React from "react";
 
 export function Events() {
     return (
-        <div>
+        <div className="text-secondary-900">
             Events
         </div>
     );

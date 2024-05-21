@@ -3,7 +3,7 @@ import React from "react";
 
 export function Footer() {
     return (
-        <div>
+        <div className="text-secondary-900">
             Footer
         </div>
     );

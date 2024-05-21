@@ -2,7 +2,7 @@ import React from "react";
 
 export function Sponsors() {
     return (
-        <div>
+        <div className="text-secondary-900">
             Sponsors
         </div>
     );
