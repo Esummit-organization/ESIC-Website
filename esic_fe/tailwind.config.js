@@ -1,10 +1,9 @@
- 
-const colors = require("tailwindcss/colors");
+/** @type {import('tailwindcss').Config} */
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -13,6 +12,7 @@ module.exports = {
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
   ],
+  plugins : [addVariablesForColors],
   prefix: "",
   theme: {
     container: {
@@ -105,7 +105,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [require("tailwindcss-animate")],
 }
 
 function addVariablesForColors(addBase, theme) {
