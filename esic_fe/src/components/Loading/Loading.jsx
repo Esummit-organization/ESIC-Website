@@ -14,7 +14,7 @@ function Loading() {
         <div className=' w-80 h-80 text-center flex flex-col justify-center items-center'>
             <img className='w-20 h-28 my-3' src={union} alt='E-SUMMIT Logo'/>
             <p className='text-gray-800 font-sans font-bold text-3xl py-2'>E-SUMMIT</p>
-            <p className='text-gray-700 font-sans font-normal text-lg'>& Innovation<br/>Committe</p>
+            <p className='text-gray-700 font-sans font-normal text-lg'>& Innovation<br/>Committee</p>
         </div>
        
       </div>
