@@ -21,7 +21,7 @@ function App() {
         <Footer />
         
         {/* <MarqueScroll text={"E-SUMMIT The Festival "} angle={-2} color={"orange"}/> */}
-        {/* <MarqueScroll text={"Events. "} angle={0} color={"orange"}/> */}
+        <MarqueScroll text={"Events. "} angle={0} color={"orange"}/>
         {/* <MarqueScroll text={"Speakers. "} angle={0} color={"orange"}/> */}
       </div>
   );

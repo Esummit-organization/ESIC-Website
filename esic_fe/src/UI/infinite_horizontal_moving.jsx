@@ -68,7 +68,7 @@ export const InfiniteMovingComponent = ({
     <div
     ref={containerRef}
       className={cn(
-        " relative w-full overflow-hidden h-14 border-2 border-accent-900 whitespace-nowrap ",
+        " relative w-full overflow-hidden h-14 border-b-2 border-t-2 border-accent-900 whitespace-nowrap ",
         className
       ) } 
     >
@@ -77,7 +77,7 @@ export const InfiniteMovingComponent = ({
       //  div with scroll-animation
         ref={scrollerRef}
         className={cn(
-          " text-background-950 flex justify-center font-semibold text-4xl py-1",
+          " text-background-950 flex justify-center font-normal text-3xl py-2 grotesk",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
