@@ -20,9 +20,9 @@ function App() {
           </Routes>
         <Footer />
         
-        {/* <MarqueScroll text={"E-SUMMIT The Festival "} angle={-2} color={"orange"}/> */}
-        {/* <MarqueScroll text={"Events. "} angle={0} color={"orange"}/> */}
-        {/* <MarqueScroll text={"Speakers. "} angle={0} color={"orange"}/> */}
+        {/* <MarqueScroll className="bg-background-500" text={"E-SUMMIT The Festival "} angle={-2} /> */}
+        {/* <MarqueScroll className="bg-background-500" text={"Events. "} angle={0} /> */}
+        {/* <MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> */}
       </div>
   );
 }
