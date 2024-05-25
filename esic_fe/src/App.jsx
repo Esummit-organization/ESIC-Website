@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import './App.css';
-import { MarqueScroll } from './components/Marque/Marque';
+
 // Page Imports 
 import { Home } from './Pages/Home/Home';
 import { Blogs } from './Pages/Blogs/Blogs';
@@ -21,7 +21,7 @@ function App() {
         <Footer />
         
         {/* <MarqueScroll text={"E-SUMMIT The Festival "} angle={-2} color={"orange"}/> */}
-        <MarqueScroll text={"Events. "} angle={0} color={"orange"}/>
+        {/* <MarqueScroll text={"Events. "} angle={0} color={"orange"}/> */}
         {/* <MarqueScroll text={"Speakers. "} angle={0} color={"orange"}/> */}
       </div>
   );
