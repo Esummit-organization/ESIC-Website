@@ -2,30 +2,33 @@ import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
 
-// the design here needs to be changed, make sure to change the design to fit the design of the website we are working on, try playing around with the tailwind classes to see what works for you and what doesn't, soon you will get the hang of it
-
 export const InfiniteMovingComponent = ({
   text,
-  direction = "left",
+  direction = "right",
   speed = "fast",
   pauseOnHover = true,
   className,
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = React.useRef(null);
+  const scrollerRef = React.useRef(null);
+  
+  //add dots in place of "." in text
+  const wordsWithDots = text.split('.').join(' • ');
 
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
-
+      
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
+          
         }
       });
 
@@ -61,26 +64,31 @@ export const InfiniteMovingComponent = ({
     }
   };
   return (
+    // outer container
     <div
-      ref={containerRef}
+    ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        " relative w-full overflow-hidden h-14 border-2 border-accent-900 whitespace-nowrap ",
         className
-      )}
+      ) } 
     >
       <ul
+       
+      //  div with scroll-animation
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          " text-background-950 flex justify-center font-semibold text-4xl py-1",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
+        {/* text in black */}
+        <p className="mx-2">{wordsWithDots}</p>
 
-        {/* this is where the text will be displayed, which will be passed in as a prop from the MarqueScroll component */}
-
-        {text}
-
+        {/* text with red border */}
+        <p className=" mx-2" style={{WebkitTextStroke: `2px #8E0000`, color: `transparent`}}>{wordsWithDots}</p>
+        <p className=" mx-2" style={{WebkitTextStroke: `2px #8E0000`, color: `transparent`}}>{wordsWithDots}</p>
+        <p className=" mx-2" style={{WebkitTextStroke: `2px #8E0000`, color: `transparent`}}>{wordsWithDots}</p>
         
       </ul>
     </div>

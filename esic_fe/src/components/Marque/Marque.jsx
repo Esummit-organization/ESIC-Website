@@ -1,25 +1,18 @@
-import React from "react";
 import { InfiniteMovingComponent } from "@/UI/infinite_horizontal_moving";
+import { transform } from "framer-motion";
+import React from "react";
 
-export function MarqueScroll({text}) {
+export function MarqueScroll({text,angle,color}){
     return (
-        <div className="text-secondary-900">
+      <div className="bg-background-500 box-border relative overflow-hidden w-full h-14 whitespace-nowrap" style={{transform: `rotate(${angle}deg)`, backgroundColor: `${color}`}}>
 
-            Use the InfiniteMovingComponent to create a Marque Scroll
+         <InfiniteMovingComponent
+        text={text}
+        />
+        
+      </div>
 
-            {/* this is how you use the InfiniteMovingComponent
-            <InfiniteMovingComponent text={"some text here that the MarqueScroll component takes in"}/> */}
-                
-            Other sections would use this component to create a Marque Scroll
-            they will pass in the items text only for now
-
-            {/* This is a sample of how others would use this component as 
-            <MarqueScroll text={"some text here"} /> */}
-
-            You will have to modify stuff in the InfiniteMovingComponent to make it work for you
-
-            the design has to be changed to fit the design of the website you are working on
-
-        </div>
+      
+        
     );
-    }
+}
