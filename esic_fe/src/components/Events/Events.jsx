@@ -12,7 +12,7 @@ export function Events() {
   return (
     <div className="text-secondary-900 bg-hero-50 h-screen w-full flex flex-col items-center">
       <p className="text-7xl text-white mb-4">Events</p>
-      <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col mt-20 mb-20 h-auto">
         <Marquee
           className="w-auto text-white mb-5"
           pauseOnHover={hover} // Set pauseOnHover dynamically
@@ -21,7 +21,7 @@ export function Events() {
         >
           {/* Apply hover functionality to each span */}
           <span
-            className="mr-10 relative"
+            className="mr-10 relative hover:scale-[110%]"
             onMouseEnter={() => handleHover(true)} // Set hover to true on mouse enter
             onMouseLeave={() => handleHover(false)} // Set hover to false on mouse leave
           >
@@ -38,7 +38,7 @@ export function Events() {
             />
           </span>
           <span
-            className="mr-10 relative"
+            className="mr-10 relative hover:scale-[110%]"
             onMouseEnter={() => handleHover(true)} // Set hover to true on mouse enter
             onMouseLeave={() => handleHover(false)} // Set hover to false on mouse leave
           >
@@ -56,13 +56,13 @@ export function Events() {
           </span>
         </Marquee>
         <Marquee
-          className="w-full text-white"
+          className="w-full text-white mt-20"
           pauseOnHover={hover}
           reverse={true}
           repeat={1}
         >
           <span
-            className="mr-10 relative"
+            className="mr-10 relative hover:scale-[110%]"
             onMouseEnter={() => handleHover(true)} // Set hover to true on mouse enter
             onMouseLeave={() => handleHover(false)} // Set hover to false on mouse leave
           >
@@ -79,14 +79,14 @@ export function Events() {
             />
           </span>
           <span
-            className="mr-10 relative"
+            className="mr-10 relative hover:scale-[110%]"
             onMouseEnter={() => handleHover(true)} // Set hover to true on mouse enter
             onMouseLeave={() => handleHover(false)} // Set hover to false on mouse leave
           >
             <img
               src="https://www.indiafilings.com/learn/wp-content/uploads/2023/01/shutterstock_1043242525-1.jpg"
               alt="Another Placeholder Image"
-              className="h-40 w-[250px] rounded-3xl border border-white object-cover"
+              className="h-40 w-[250px] rounded-3xl border border-white object-cover "
             />
             <p className="absolute bottom-5 left-1 font-bold">Start Up</p>
             <img
@@ -97,6 +97,7 @@ export function Events() {
           </span>
         </Marquee>
       </div>
+      <p className="flex justify-center text-[#FFFFFF] mt-10 font-bold text-xl"> View all events →</p>
     </div>
   );
 }
