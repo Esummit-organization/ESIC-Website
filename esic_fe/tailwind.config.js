@@ -77,6 +77,9 @@ module.exports = {
       }
     },
     extend: {
+      fontFamily: {
+        'antonio': ['Antonio', 'sans-serif'], // Add this line
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
