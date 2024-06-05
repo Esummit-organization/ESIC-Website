@@ -18,7 +18,7 @@ export const features = [
     },
     {
         Icon: InputIcon,
-        name: "Google",
+        name: "Gokart",
         description: "This sponsor",
         href: "/",
         cta: "Learn more",
