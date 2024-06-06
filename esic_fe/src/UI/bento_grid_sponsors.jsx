@@ -3,6 +3,9 @@ import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import React from 'react';
 
+
+const titleSponserStyles = "col-span-3 lg:col-span-2"
+
 const BentoGrid = ({
   children,
   className,
@@ -41,9 +44,9 @@ const BentoCard = ({
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 items-center ">
+    <div className={`pointer-events-none z-10 flex transform-gpu gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 items-center ${className == titleSponserStyles ? `flex-row` : `flex-col`}`}>
       <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
-      <h3 className="antonio text-[2.1rem] font-semibold text-gray-600 dark:text-gray-200">
+      <h3 className="antonio text-[2.1rem] font-semibold text-gray-300 dark:text-gray-200">
         {name}
       </h3>
       <p className="max-w-lg text-sponsor-50 text-xl">{description}</p>
