@@ -10,7 +10,7 @@ const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
+        "grid w-[47rem] auto-rows-[22rem] grid-cols-3 gap-10",
         className,
       )}
     >
@@ -31,21 +31,22 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
+      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-2xl border-2 border-sponsor-50",
       // light styles
-      "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+      "bg-gradient-to-br from-[#060d14] to-[#102132] [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
       // dark styles
       "transform-gpu dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+      "h-[12rem]",
       className,
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
+    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 items-center ">
       <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
-      <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+      <h3 className="antonio text-[2.1rem] font-semibold text-gray-600 dark:text-gray-200">
         {name}
       </h3>
-      <p className="max-w-lg text-neutral-400">{description}</p>
+      <p className="max-w-lg text-sponsor-50 text-xl">{description}</p>
     </div>
 
     <div
@@ -54,7 +55,7 @@ const BentoCard = ({
       )}
     >
       <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
-        <a href={href}>
+        <a href={href} className="text-gray-200">
           {cta}
           <ArrowRightIcon className="ml-2 h-4 w-4" />
         </a>

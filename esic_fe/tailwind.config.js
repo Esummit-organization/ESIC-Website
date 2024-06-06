@@ -80,6 +80,9 @@ module.exports = {
       },
       hero: {
         50: "#012441"
+      },
+      sponsor: {
+        50: "#3755C3"
       }
     },
     extend: {
