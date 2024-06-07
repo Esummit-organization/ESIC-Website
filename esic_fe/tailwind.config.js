@@ -82,7 +82,7 @@ module.exports = {
         50: "#012441"
       },
       sponsor: {
-        50: "#3755C3"
+        50: "#56ACFF"
       }
     },
     extend: {
