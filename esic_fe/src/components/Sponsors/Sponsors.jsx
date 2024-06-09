@@ -26,18 +26,21 @@ export function Sponsors() {
         </div>
       </div>
 
-        <div className="relative flex w-full justify-center">
+        <div className="relative w-full flex justify-center">
+            <div>
             <BentoGrid className="grid-rows-1 lg:grid-rows-3 px-10 py-10 ">
                 {features.map((feature) => (
                     <BentoCard key={feature.name} {...feature} />
                 ))}
             </BentoGrid>
+            </div>
+            
 
             <div>
             <img src={Sponsors_revealSVG} alt="Example" className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none" />
            </div> 
 
-            <div className="flex items-center absolute bottom-20"> 
+            <div className="flex items-center absolute bottom-10"> 
             <a href='#' className="flex justify-centre ">
             <p className="mr-1 text-3xl text-white">View All Sponsors</p>
             <div className='flex justify-center rounded-full'><IconArrowUpRight color='white' size={40}/></div>
