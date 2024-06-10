@@ -10,7 +10,7 @@ export const features = [
     {
         Icon: FileTextIcon,
         name: "Flipkart",
-        description: "TITLE SPONSOR",
+        description: "Title sponsor",
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,

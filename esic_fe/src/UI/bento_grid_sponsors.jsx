@@ -11,15 +11,15 @@ const BentoGrid = ({
 }) => {
   return (
     <>
-    <div
-      className={cn(
-        "grid w-[70rem] auto-rows-[22rem] grid-cols-3 gap-10",
-        className,
-      )}
-    >
-      {children}
-    </div>
-    <div className="w-full h-20"></div>
+      <div
+        className={cn(
+          "grid lg:w-[70rem] lg:auto-rows-[22rem] lg:grid-cols-3 gap-10",
+          className,
+        )}
+      >
+        {children}
+      </div>
+      <div className="w-full h-20"></div>
     </>
   );
 };
@@ -45,14 +45,14 @@ const BentoCard = ({
       className,
     )}
   >
-    <div>{background}</div>
+    {/* <div>{background}</div> */}
     <div className={`pointer-events-none z-10 flex transform-gpu gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 items-center ${className == titleSponserStyles ? `flex-col sm:flex-row justify-center items-center` : `flex-col`}`}>
       <Icon className={`${className == titleSponserStyles ? `h-20 w-20 sm:mr-2` : `h-20 w-20`} "origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75"`} />
       <div className={`${className == titleSponserStyles ? `text-center sm:text-left` : `text-center`}`}>
-      <h3 className={`"antonio ${className == titleSponserStyles ? `text-[3.5rem] sm:text-[6.8rem]` : `text-[3.5rem]`} font-semibold text-gray-300 dark:text-gray-200"`}>
-        {name}
-      </h3>
-      <p className={`max-w-lg text-sponsor-50 ${className == titleSponserStyles ? `text-[1.5rem] sm:text-[2.5rem]` : `text-[1.5rem]`}`}>{description}</p>
+        <h3 className={`"antonio ${className == titleSponserStyles ? `text-[3.5rem] sm:text-[6.8rem]` : `text-[3.5rem]`} font-semibold text-gray-300 dark:text-gray-200"`}>
+          {name}
+        </h3>
+        <p className={`max-w-lg text-sponsor-50 ${className == titleSponserStyles ? `text-[1.5rem] sm:text-[2.5rem]` : `text-[1.5rem]`}`}>{description}</p>
       </div>
     </div>
 

@@ -38,10 +38,10 @@ export function Speakers() {
     return (
         <div className="bg-gradient-to-br to-background-900 from-hero-50 dark:from-background">
             <div className=" px-14 pt-10">
-            <h1 className='text-8xl text-white grotesk bg-gradient-to-t from-gray-900 to-gray-50 inline-block text-transparent bg-clip-text'>Speakers</h1>
+            <h1 className='text-5xl lg:text-8xl text-white grotesk bg-gradient-to-t from-gray-900 to-gray-50 inline-block text-transparent bg-clip-text'>Speakers</h1>
             <div className="flex items-center">
             <hr className='w-20 border-t-2 border-[#006DD5] ' />
-            <p className="poppins text-xl mx-3 my-1 text-[#006DD5]">View all Speakers</p>
+            <p className="poppins lg:text-xl mx-3 my-1 text-[#006DD5]">View all Speakers</p>
             <a href='#'><div className='flex items-center justify-center rounded-full bg-gray-800'><IconArrowUpRight color='white' size={20}/></div></a>
             </div>
             </div>
