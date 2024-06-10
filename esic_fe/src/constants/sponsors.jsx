@@ -14,7 +14,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-2",
+        className: "col-span-3 lg:col-span-2 sm:col-span-2",
     },
     {
         Icon: InputIcon,
@@ -23,7 +23,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px]",
     },
     {
         Icon: GlobeIcon,
@@ -32,7 +32,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px]",
     },
     {
         Icon: CalendarIcon,
@@ -41,7 +41,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px]",
     },
     {
         Icon: BellIcon,
@@ -50,7 +50,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px]",
     },
     {
         Icon: GlobeIcon,
@@ -59,7 +59,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px] ",
     },
     {
         Icon: CalendarIcon,
@@ -68,7 +68,7 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-1 sm:w-[288px]",
     },
     {
         Icon: BellIcon,
@@ -77,6 +77,6 @@ export const features = [
         href: "/",
         cta: "Learn more",
         background: <img className="absolute -right-20 -top-20 opacity-60" />,
-        className: "col-span-3 lg:col-span-1",
+        className: "col-span-3 lg:col-span-1 sm:col-span-2 lg:w-[288px]",
     },
 ];

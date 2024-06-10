@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import React from 'react';
 
-const titleSponserStyles = "col-span-3 lg:col-span-2"
+const titleSponserStyles = "col-span-3 lg:col-span-2 sm:col-span-2"
 
 const BentoGrid = ({
   children,
@@ -13,7 +13,7 @@ const BentoGrid = ({
     <>
       <div
         className={cn(
-          "grid lg:w-[70rem] lg:auto-rows-[22rem] lg:grid-cols-3 gap-10",
+          "grid lg:w-[60rem] lg:auto-rows-[22rem] lg:grid-cols-3 gap-10",
           className,
         )}
       >
@@ -36,7 +36,7 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-3xl border-2 border-sponsor-50 items-center",
+      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-3xl border-2 border-sponsor-50 items-center ",
       // light styles
       "bg-gradient-to-br from-[#060d14] to-[#102132] [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
       // dark styles
