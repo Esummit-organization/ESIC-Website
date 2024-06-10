@@ -1,4 +1,17 @@
 import React from "react";
+import { WidthIcon } from '@radix-ui/react-icons'
+import { IconArrowUpRight } from "@tabler/icons-react";
+import { BentoCard, BentoGrid } from "@/UI/bento_grid_sponsors";
+import {
+    BellIcon,
+    CalendarIcon,
+    FileTextIcon,
+    GlobeIcon,
+    InputIcon,
+} from "@radix-ui/react-icons";
+import { features } from "@/constants/sponsors";
+import Sponsors_revealSVG from "@/assets/svgs/sponsors_reveal.svg"
+
 
 export function Sponsors() {
     return (
