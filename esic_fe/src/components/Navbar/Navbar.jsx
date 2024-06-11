@@ -10,7 +10,7 @@ export function Navbar() {
     }
     
         return (
-        <nav className={"duration-300 bg-background-950  text-secondary-900 w-screen fixed"}>
+        <nav className={"duration-300 bg-background-950  text-secondary-900 w-screen fixed z-30"}>
             <div className={`${menu ? "text-secondary-900 bg-background-950 w-screen fixed" :"" }`}>
                 <div className="flex justify-between items-start md:items-center py-4 px-10">
                     <div className="justify-self-start">
