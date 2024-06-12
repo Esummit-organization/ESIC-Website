@@ -53,7 +53,6 @@ export function Hero() {
 					<div className="flex justify-center items-end  h-[100vh] w-full ">
 						<img
 							style={{ aspectRatio: 1.15 }}
-							style={{ aspectRatio: 1.15 }}
 							className="w-full max-h-[100vh] max-w-[100vh]"
 							src="hero/6.png"
 							alt=""
@@ -78,8 +77,8 @@ export function Hero() {
 				</ParallaxLayer>
 				<ParallaxLayer offset={1} speed={0.35}>
 					<div className="flex justify-center items-end  h-[100vh] w-full  relative">
-						<div className="absolute top-[-280px] left-0 w-[110%] h-[80px] bg-background-500 rotate-2 border border-2 border-solid border-[#000000]">
-							<p className="grotesk w-full  h-full flex items-center text-3xl text-[#000000] tracking-widest justify-center items-end text-nowrap">
+						<div className="absolute top-[-280px] left-0 w-[110%] h-[80px] bg-background-500 rotate-2 border-2 border-solid border-[#000000]">
+							<p className="grotesk w-full  h-full flex items-center text-3xl text-[#000000] tracking-widest justify-center text-nowrap">
 								Startups • Networking • Enterprunership • Startups • Networking
 								• Enterprunership • Networking • Enterprunership • Startups •
 								Networking • Enterprunership
@@ -89,7 +88,7 @@ export function Hero() {
 				</ParallaxLayer>
 
 				<ParallaxLayer offset={1} speed={0}>
-					<div className="flex justify-center items-center h-[100vh] w-full  relative items-end flex-col gap-[40px]">
+					<div className="flex justify-center items-center h-[100vh] w-full  relative flex-col gap-[40px]">
 						<p className="grotesk text-4xl text-[#870000] font-semibold">
 							What is E-Summit ?
 						</p>
