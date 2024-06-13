@@ -12,12 +12,12 @@ export function Events() {
   };
 
   return (
-    <div className="text-secondary-900 bg-[secondary-900] h-full w-full flex flex-col items-center" style={{ overflowX: 'hidden' }}>
-      <div className="flex flex-col w-full h-[160px] w-[650px]">
-        <img src="EventsPreview.svg" alt="" className="h-[350px]" />
+    <div className="bg-[#FFE7B9] h-[full] w-full flex flex-col items-center" style={{ overflowX: 'hidden' }}>
+      <div className="flex flex-col w-full h-[200px]">
+        <img src="EventsPreview.svg" alt="" className="h-[470px]" />
       </div>
-      <MarqueScroll className="bg-background-500 mb-[30px]" text={"Events. "} angle={0} />
-        <div className="flex w-full flex-col h-auto">
+      <MarqueScroll className="bg-background-500 mb-[25px]" text={"Events. "} angle={0} />
+        <div className="flex w-full flex-col h-auto mt-[100px]">
           <Marquee
             className="w-auto text-white mb-5"
             pauseOnHover={hover}
@@ -48,7 +48,7 @@ export function Events() {
         </div>
       
 
-      <div className="overflow-y-hidden mt-10" style={{ scrollSnapType: "x mandatory" }}>
+      <div className="overflow-y-hidden mt-10 bg-" style={{ scrollSnapType: "x mandatory" }}>
         <Marquee
           className="w-full text-white"
           pauseOnHover={hover}
@@ -77,8 +77,9 @@ export function Events() {
           ))}
         </Marquee>
       </div>
-
-      <p className="flex justify-center text-[black] mt-10 text-xl hover:cursor"> View all events →</p>
+      <div className="cursor-pointer hover:font-bold">
+      <p className="flex justify-center text-[black] mt-5 text-xl">View all events →</p>
+      </div>
       {/*<MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> */}
     </div>
   );
