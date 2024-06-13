@@ -12,16 +12,12 @@ export function Events() {
   };
 
   return (
-    <div className="text-secondary-900 bg-[secondary-900] h-auto w-full flex flex-col items-center" style={{ overflowX: 'hidden' }}>
-      <div className="flex flex-col w-full" style={{ 
-        overflowX: 'hidden',
-        backgroundImage: `url("EventsPreview.svg")`,
-        backgroundSize: 'contain',
-        backgroundPosition: 'top',
-        backgroundRepeat: 'no-repeat'}}
-      >
-        <MarqueScroll className="bg-background-500" text={"Events. "} angle={0} />
-        <div className="flex w-full flex-col mt-10 h-auto">
+    <div className="text-secondary-900 bg-[secondary-900] h-full w-full flex flex-col items-center" style={{ overflowX: 'hidden' }}>
+      <div className="flex flex-col w-full h-[160px] w-[650px]">
+        <img src="EventsPreview.svg" alt="" className="h-[350px]" />
+      </div>
+      <MarqueScroll className="bg-background-500 mb-[30px]" text={"Events. "} angle={0} />
+        <div className="flex w-full flex-col h-auto">
           <Marquee
             className="w-auto text-white mb-5"
             pauseOnHover={hover}
@@ -50,7 +46,7 @@ export function Events() {
             ))}
           </Marquee>
         </div>
-      </div>
+      
 
       <div className="overflow-y-hidden mt-10" style={{ scrollSnapType: "x mandatory" }}>
         <Marquee
@@ -82,8 +78,8 @@ export function Events() {
         </Marquee>
       </div>
 
-      <p className="flex justify-center text-[black] mt-10 text-xl"> View all events →</p>
-      <MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> 
+      <p className="flex justify-center text-[black] mt-10 text-xl hover:cursor"> View all events →</p>
+      {/*<MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> */}
     </div>
   );
 }

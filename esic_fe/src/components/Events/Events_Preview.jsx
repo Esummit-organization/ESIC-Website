@@ -60,7 +60,7 @@ function Marquee({
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden p-2 [--duration:20s] [--gap:1rem]",
+        "group flex overflow-hidden p-2 [--duration:45s] [--gap:1rem]",
         {
           "flex-row": !vertical,
           "flex-col": vertical,
