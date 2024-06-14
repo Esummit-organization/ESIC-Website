@@ -13,11 +13,23 @@ export function Events() {
 
   return (
     <div className="bg-[#FFE7B9] h-[full] w-full flex flex-col items-center" style={{ overflowX: 'hidden' }}>
-      <div className="flex flex-col w-full h-[200px]">
-        <img src="EventsPreview.svg" alt="" className="h-[470px]" />
+
+      <div className="relative w-full h-[470px] overflow-hidden">
+          <img 
+            src="EventsPreview.svg" 
+            alt="" 
+            className="absolute inset-0 w-full h-full object-contain"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <MarqueScroll 
+              className="bg-background-500 w-full" 
+              text={"Events. "} 
+              angle={0}
+            />
+          </div>
       </div>
-      <MarqueScroll className="bg-background-500 mb-[25px]" text={"Events. "} angle={0} />
-        <div className="flex w-full flex-col h-auto mt-[100px]">
+
+      <div className="flex w-full flex-col h-auto mt-[-50px]">
           <Marquee
             className="w-auto text-white mb-5"
             pauseOnHover={hover}
@@ -45,7 +57,7 @@ export function Events() {
               </span>
             ))}
           </Marquee>
-        </div>
+      </div>
       
 
       <div className="overflow-y-hidden mt-10 bg-" style={{ scrollSnapType: "x mandatory" }}>
