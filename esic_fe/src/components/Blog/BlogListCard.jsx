@@ -9,9 +9,11 @@ const BlogListCard = ({
 
         let tagElements = [];
         for(let i=0;i<tags.length;i++){
-            tagElements[i]=<div className='border-[1px] border-sponsor-50 rounded-xl p-[5px] ml-2'>
+            if(tags[i]!=''){
+                tagElements[i]=<div className='border-[1px] border-sponsor-50 rounded-xl p-[5px] ml-2'>
                            <p className='text-[10px] md:text-[13px]'>{tags[i]}</p>
                            </div>;
+            }      
         }
 
         return (
