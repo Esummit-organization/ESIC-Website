@@ -14,10 +14,10 @@ function App() {
   return (
       <div >
       
-        
-        <MarqueScroll className="bg-background-500" text={"E-SUMMIT The Festival "} angle={-2} />
+        <About/>
+        {/* <MarqueScroll className="bg-background-500" text={"E-SUMMIT The Festival "} angle={-2} />
         <MarqueScroll className="bg-background-500" text={"Events. "} angle={0} />
-        <MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} />
+        <MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> */}
       </div>
   );
 }
