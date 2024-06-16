@@ -3,7 +3,7 @@ import React from "react";
 
 function TagElement({ children }) {
   return (
-    <p className="border border-sponsor-50 rounded-xl p-1 text-xs inline-block">
+    <p className="border border-sponsor-50  bg-sponsor-50 bg-opacity-20 rounded-xl p-[6px] text-xs inline-block">
       {children}
     </p>
   );
@@ -37,8 +37,8 @@ const BlogListCard = ({
       </figure>
 
       <div className="flex flex-col">
-        <p className="px-4 sm:px-8 py-1">{date}</p>
-        <hr />
+        <p className="px-4 text-lg sm:px-8 py-[5px]">{date}</p>
+        <div className="px-8"><hr className="border-t-2 border-sponsor-50"/></div>
         <h1 className="text-center text-xl py-2">{blog_title}</h1>
         <p className="line-clamp-4 text-ellipsis px-4 sm:px-8 grow text-justify">
           {blog_content}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function BlogPageTitle({ children }) {
   return (
     <h1
-      className="p-8 bg-blog-50 text-xl tracking-wider relative hover:tracking-widest cursor-pointer
+      className="p-8 lg:px-20 xl:px-40 bg-blog-50 text-3xl tracking-wider relative hover:tracking-widest cursor-pointer
                 transition-all hover:text-sponsor-50
                 before:content-normal before:absolute before:h-1
                 before:bg-white before:w-3 before:top-2/3 hover:before:w-10
@@ -31,7 +31,7 @@ export function Blogs() {
   return (
     <>
       <BlogPageTitle>FEATURED</BlogPageTitle>
-      <div className="px-8 bg-blog-50">
+      <div className="px-8 lg:px-20 xl:px-40 bg-blog-50">
         <BlogListCard {...featuredCard} horizontal />
       </div>
       <BlogPageTitle>Recent Blogs</BlogPageTitle>

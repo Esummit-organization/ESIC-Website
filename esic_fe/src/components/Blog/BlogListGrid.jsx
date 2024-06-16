@@ -15,7 +15,7 @@ const BlogListGrid = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 bg-gradient bg-gradient-to-br from-blog-50 to-blog-100 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 w-full px-8">
+    <div className="grid grid-cols-1 bg-gradient bg-gradient-to-br from-blog-50 to-blog-100 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-8 lg:px-20 xl:px-40">
       {Array(9)
         .fill(null)
         .map((_, i) => (
