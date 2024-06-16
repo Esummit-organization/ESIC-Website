@@ -37,10 +37,10 @@ const BlogListCard = ({
       </figure>
 
       <div className="flex flex-col">
-        <p className="px-4 text-lg sm:px-8 py-[5px]">{date}</p>
-        <div className="px-8"><hr className="border-t-2 border-sponsor-50"/></div>
-        <h1 className="text-center text-xl py-2">{blog_title}</h1>
-        <p className="line-clamp-4 text-ellipsis px-4 sm:px-8 grow text-justify">
+        <p className="px-4 text-sm sm:px-8 py-[8px]">{date}</p>
+        <div className="px-8"><hr /></div>
+        <h1 className="text-left text-sponsor-50 font-semibold text-xl px-4 sm:px-8 py-2">{blog_title}</h1>
+        <p className="line-clamp-4 text-gray-300 text-ellipsis px-4 sm:px-8 grow text-left">
           {blog_content}
         </p>
         <div className="py-4 px-4 sm:px-8 space-x-2">{tagElements}</div>
