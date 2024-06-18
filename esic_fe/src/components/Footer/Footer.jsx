@@ -4,11 +4,11 @@ import React from "react";
 export function Footer() {
     return (
       <div className="text-secondary-900">
-        <div className="w-full  py-12 px-20 bg-background-950 h-80 text-white  ">
-          <div className="flex justify-between">
+        <div className="w-full px-2  py-12  bg-background-950  text-white  ">
+          <div className="display ">
             <div>
-              <div className="flex gap-2">
-                <div className="">
+              <div className="flex gap-2  justify-center ">
+                <div>
                   <svg
                     width="35"
                     height="52"
@@ -26,7 +26,7 @@ export function Footer() {
                   </svg>
                 </div>
                 <div className="flex-col">
-                  <div className="flex">
+                  <div className="flex ">
                     <span className="text-xl">E-SUMMIT</span>
                     <span className="text-gray-300 text-lg">'24</span>
                   </div>
@@ -37,7 +37,7 @@ export function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="mt-5 flex-col">
+              <div className="mt-3 flex-col items-center">
                 <span>Follow us on</span>
                 <div className="flex gap-10 ml-2 mt-5">
                   <svg
@@ -95,9 +95,9 @@ export function Footer() {
                 </div>
               </div>
             </div>
-            <div>
+            <div >
               <span>Quick links</span>
-              <div className="flex gap-5 my-4">
+              <div className="flex gap-5 my-4 justify-center">
                 <div className=" text-gray-400">
                   <div>Home</div>
                   <div>Event</div>
@@ -114,7 +114,7 @@ export function Footer() {
                 </div>
               </div>
             </div>
-            <div>
+            <div >
               <span>Subscribe to our Newsletter</span>
               <form>
                 <input
@@ -149,7 +149,7 @@ export function Footer() {
                     width="15"
                     height="15"
                     viewBox="0 0 24 24"
-                    fill="#322f2f"
+                    fill="currentColor"
                     class="icon icon-tabler icons-tabler-filled icon-tabler-phone"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
