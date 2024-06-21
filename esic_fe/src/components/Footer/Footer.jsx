@@ -3,7 +3,7 @@ import React from "react";
 
 export function Footer() {
     return (
-      <div className="text-secondary-900">
+      <div className="text-secondary-900 poppins">
         <div className="w-full px-2  py-12  bg-background-950  text-white  ">
           <div className="flex flex-wrap justify-center lg:gap-52 md:gap-20 gap-16 ">
             <div>
@@ -128,8 +128,8 @@ export function Footer() {
               </form>
               <div className="mt-6">
                 <span>Contact Us</span>
-                <div className="flex flex-col gap-2 text-gray-300">
-                  <div className="flex h-3 items-center mt-3 gap-1">
+                <div className="flex flex-col gap-1 mb-2 text-gray-300">
+                  <div className="flex h-3 items-center mt-3  gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
@@ -158,7 +158,7 @@ export function Footer() {
                     </svg>
                     <span>Phone: +91-9096642803, 6200968914</span>
                   </div>
-                  <div className="flex h-3 items-center mt-3 gap-1">
+                  <div className="flex h-3 items-center mt-3  gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
@@ -170,7 +170,7 @@ export function Footer() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z" />
                     </svg>
-                    <span className="w-80 mt-6">
+                    <span className="w-80 mt-12">
                       Address: NITK, NH 66, Srinivasnagar, Surathkal Mangalore,
                       Karnataka- 575025
                     </span>
