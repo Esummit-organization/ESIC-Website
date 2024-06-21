@@ -19,7 +19,7 @@
 .grotesk {
 	font-family: "Sharp Grotesk Book 25 Regular";
 }
-@media only screen and (max-width: 1162px) {
+/* @media only screen and (max-width: 1162px) {
 	.display {
 			display: flex;
 			flex-wrap: wrap;
@@ -35,4 +35,4 @@
 			gap: 208px;
 			justify-content: center;
 	}
-}
+} */

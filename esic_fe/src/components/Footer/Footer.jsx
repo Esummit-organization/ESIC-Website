@@ -5,7 +5,7 @@ export function Footer() {
     return (
       <div className="text-secondary-900">
         <div className="w-full px-2  py-12  bg-background-950  text-white  ">
-          <div className="display ">
+          <div className="flex flex-wrap justify-center lg:gap-52 md:gap-20 gap-16 ">
             <div>
               <div className="flex gap-2  justify-center ">
                 <div>
