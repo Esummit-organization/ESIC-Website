@@ -13,35 +13,25 @@ export  function About() {
   }, []);
 
   const bulbStyle =
-    windowWidth <= 768
-      ? {
-          height: "10rem",
-          width: "10rem",
-          marginTop: "50px",
-          
-          position: "absolute",
-          
-          transform: "rotate(-20deg)",
-        }
-      : { height: "28rem", width: "20rem", marginTop: "-50px" };
+  windowWidth <= 768
+    ? {}
+    : windowWidth <= 1050
+      ? { height: "15rem", width: "12rem" }
+      : { height: "25rem", width: "20rem", marginTop: "-50px" };
 
   const logoStyle =
     windowWidth < 768
       ? {
-          height: "8rem",
-          width: "8rem",
-          position: "absolute",
-          left: "-0.5%",
-          marginTop: "90px",
+          
         }
       : { height: "12rem", width: "12rem" };
 
   return (
-    <div>
+    <div className="main  ">
       <div className="flex flex-col justify-center items-center h-full bg-background-150">
         <div className="md:text-center pl-5 text-4xl mt-10 font-bold text-secondary-600 grotesk">What is E-Summit?</div>
-        <div className="md:mt-5 md:p-6 md:mr-[25px] md:text-lg flex flex-col items-center mt-5">
-          <p className="md:text-lg text-gray-800 md:w-[50rem] w-[320px] md:text-center md:p-2 p-6 poppins">
+        <div className="md:mt-5  md:mr-[25px] md:text-lg flex flex-col items-center mt-5">
+          <p className="md:text-lg text-gray-800 md:w-[50rem] w-[320px] md:text-center md:p-5 p-0 poppins">
           {content[0].description}
           </p>
           <div className="mt-20 flex justify-center">
@@ -59,7 +49,7 @@ export  function About() {
               <img
                 src="/images/Bulb1.png"
                 alt="Bulb"
-                className="bulb-image w-full h-full md:block hidden top-0"
+                className="bulb-image w-full h-full md:block hidden top-0 "
                 style={{
                   ...bulbStyle,
                   zIndex: 1,
