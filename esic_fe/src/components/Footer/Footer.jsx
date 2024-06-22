@@ -4,8 +4,8 @@ import React from "react";
 export function Footer() {
     return (
       <div className="text-secondary-900 poppins">
-        <div className="w-full px-2  py-12  bg-background-950  text-white  ">
-          <div className="flex flex-wrap justify-center lg:gap-52 md:gap-20 gap-16 ">
+        <div className="w-full px-5  py-12  bg-background-950  text-white  ">
+          <div className="flex flex-wrap  justify-center lg:gap-52 md:gap-20 gap-16 ">
             <div>
               <div className="flex gap-2  justify-center ">
                 <div>
@@ -127,24 +127,26 @@ export function Footer() {
                 </button>
               </form>
               <div className="mt-6">
-                <span>Contact Us</span>
-                <div className="flex flex-col gap-1 mb-2 text-gray-300">
-                  <div className="flex h-3 items-center mt-3  gap-1">
+                <span className="">Contact Us</span>
+                <div className="flex-col items-center justify-center gap-3 mb-2 text-gray-300">
+                  <div className="flex  items-center mt-3  gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
                       height="15"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      class="icon icon-tabler icons-tabler-filled icon-tabler-mail"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
                       <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
+
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" />
                     </svg>
                     <span>Email: engineernitkpublicity@gmail.com</span>
                   </div>
-                  <div className="flex h-3 items-center mt-3 gap-1">
+                  <div className="flex  items-center mt-3  gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
@@ -158,22 +160,22 @@ export function Footer() {
                     </svg>
                     <span>Phone: +91-9096642803, 6200968914</span>
                   </div>
-                  <div className="flex h-3 items-center mt-3  gap-1">
+                  <div className="flex  items-center mt-3  gap-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
                       height="15"
                       viewBox="0 0 24 24"
                       fill="#f20202"
-                      class="icon icon-tabler icons-tabler-filled icon-tabler-pinned"
+                      class="mb-5"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M16 3a1 1 0 0 1 .117 1.993l-.117 .007v4.764l1.894 3.789a1 1 0 0 1 .1 .331l.006 .116v2a1 1 0 0 1 -.883 .993l-.117 .007h-4v4a1 1 0 0 1 -1.993 .117l-.007 -.117v-4h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-2a1 1 0 0 1 .06 -.34l.046 -.107l1.894 -3.791v-4.762a1 1 0 0 1 -.117 -1.993l.117 -.007h8z" />
                     </svg>
-                    <span className="w-80 mt-12">
-                      Address: NITK, NH 66, Srinivasnagar, Surathkal Mangalore,
-                      Karnataka- 575025
-                    </span>
+                    <div className="flex-col">
+                      <div>Address: NITK, NH 66, Srinivasnagar,</div>
+                      <div>Surathkal Mangalore, Karnataka- 575025</div>
+                    </div>
                   </div>
                 </div>
               </div>
