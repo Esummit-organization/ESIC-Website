@@ -29,9 +29,9 @@ export  function About() {
   return (
     <div className="main  ">
       <div className="flex flex-col justify-center items-center h-full bg-background-150">
-        <div className="md:text-center pl-5 text-4xl mt-10 font-bold text-secondary-600 grotesk">What is E-Summit?</div>
-        <div className="md:mt-5  md:mr-[25px] md:text-lg flex flex-col items-center mt-5">
-          <p className="md:text-lg text-gray-800 md:w-[50rem] w-[320px] md:text-center md:p-5 p-0 poppins">
+        <div className="md:text-center pl-6 text-4xl mt-10 font-bold text-secondary-600 grotesk">What is E-Summit?</div>
+        <div className="md:mt-5 md:mr-[25px] md:text-lg flex flex-col items-center mt-5">
+          <p className="md:text-lg text-gray-800 md:w-[49rem] w-[320px] md:text-center md:p-5 sm:p-0 pl-3 poppins">
           {content[0].description}
           </p>
           <div className="mt-20 flex justify-center">
@@ -72,3 +72,4 @@ export  function About() {
     </div>
   );
 }
+
