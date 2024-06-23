@@ -24,8 +24,8 @@ const BlogListCard = ({
   return (
     <div
       className={cn(
-        "sm:m-0 overflow-hidden rounded-3xl border-2 border-white bg-gradient-to-br from-blog-50 to-hero-50 flex flex-col",
-        horizontal && "grid grid-cols-2 max-sm:flex"
+        "sm:m-0 overflow-hidden rounded-3xl border-2 border-white bg-gradient-to-br from-blog-50 to-hero-50 flex flex-col hover:-translate-y-3 transition-all duration-200 ease-in-out cursor-pointer",
+        horizontal && "grid grid-cols-2 max-sm:flex "
       )}
     >
       <figure className={cn(horizontal && "h-full")}>
@@ -43,7 +43,7 @@ const BlogListCard = ({
         <p className="line-clamp-4 text-gray-300 text-ellipsis px-4 sm:px-8 grow text-left">
           {blog_content}
         </p>
-        <div className="py-4 px-4 sm:px-8 space-x-2">{tagElements}</div>
+        <div className="flex flex-row py-4 px-4 sm:px-8 gap-2 flex-wrap">{tagElements}</div>
       </div>
     </div>
   );
