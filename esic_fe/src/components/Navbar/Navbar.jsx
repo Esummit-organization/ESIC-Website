@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {motion} from "framer-motion";
+import {options} from "@/constants/navbar";
 
 export function Navbar() {
     
@@ -9,11 +10,14 @@ export function Navbar() {
     const showMenu = () =>{
         setMenu((prev) => !prev)
     }
+    const closeMenu = () =>{
+        setMenu(false)
+    }
     
         return (
         <nav className={"duration-300 bg-background-950  text-secondary-900 w-screen fixed z-30"}>
             <div className={`${menu ? "text-secondary-900 bg-background-950 w-screen fixed" :"" }`}>
-                <div className="flex justify-between items-start md:items-center py-4 px-10">
+                <div className="flex place-content-between items-start md:items-center py-4 px-10">
                     <div className="justify-self-start">
                         <motion.div whileTap={{scale: 0.93}} initial={{x: -60}} animate={{x: 0}} transition={{duration: 0.6}}><Link to="/" className="flex items-start ">
                             <svg width="28" height="41" viewBox="0 0 28 41" fill="none" xmlns="http://www.w3.org2000/svg">
@@ -27,11 +31,13 @@ export function Navbar() {
                         </motion.div>
                     </div>
                     <motion.ul initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="hidden md:flex ">
-                        <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150"><NavLink to="/calandar" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>CALENDAR</NavLink></motion.li>
-                        <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150"><NavLink to="/newsletter" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>NEWSLETTER</NavLink></motion.li>
-                        <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150"><NavLink to="/events" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>EVENTS</NavLink></motion.li>
-                        <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150"><NavLink to="/blog" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>BLOG</NavLink></motion.li>
+                        {options.map((options) => (
+                            <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150">
+                            <NavLink to= {options.to} className={({isActive}) => `${isActive?"font-bold":""} p-2`}>{options.name}</NavLink>
+                            </motion.li>
+                        ))}
                     </motion.ul>
+                    <div className="w-[13%]"></div>
                     {/* <motion.div initial={{y: -70}} animate={{y: 0}} transition={{ type: "spring", bounce:0.5 }}>
                         <motion.button whileTap={{scale: 0.75}} className="hidden md:block bg-gray-300 bg-opacity-35 rounded-full text-sm font-semibold text-white hover:bg-opacity-60 duration-300 pt-[3px] pb-[4px] px-1"><Link to="/login" className="p-3">LOGIN</Link></motion.button>
                     </motion.div> */}
@@ -39,10 +45,11 @@ export function Navbar() {
                         <motion.button whileTap={{scale: 0.95}} whileHover={{scale: 1.15}} onClick={showMenu} className="flex md:hidden rounded-full"><img src={`${menu ?"https://freesvg.org/img/1544641784.png":"https://www.pngmart.com/files/23/Menu-Icon-PNG-Transparent.png"}`} alt={`${menu ?"close-icon":"menu-icon"}`} className={`${menu ?"size-6":"size-7"}`} /></motion.button>
                         <motion.div layout >
                             <ul className={menu ? "flex flex-col items-end " :"hidden"}>
-                                <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150 py-1"><NavLink to="/calandar" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>CALENDAR</NavLink></motion.li>
-                                <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150 py-1"><NavLink to="/newsletter" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>NEWSLETTER</NavLink></motion.li>
-                                <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150 py-1"><NavLink to="/events" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>EVENTS</NavLink></motion.li>
-                                <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150 py-1"><NavLink to="/blog" className={({isActive}) => `${isActive?"font-bold":""} p-2`}>BLOG</NavLink></motion.li>
+                                {options.map((options) => (
+                                    <motion.li whileTap={{scale: 0.9}} className="m-4 cursor-pointer text-white text-xs hover:text-gray-300 duration-150">
+                                    <NavLink to= {options.to} onClick={closeMenu} className={({isActive}) => `${isActive?"font-bold":""} p-2`}>{options.name}</NavLink>
+                                    </motion.li>
+                                ))}
                                 {/* <motion.li whileTap={{scale: 0.9}} className="m-2 cursor-pointer text-white text-xs hover:text-gray-300 duration-150 py-1"><Link to="/login" className="p-2">LOGIN</Link> </motion.li> */}
                             </ul>
                         </motion.div>
