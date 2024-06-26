@@ -16,8 +16,8 @@ const Titlle = ({
   <div className="sm:pl-6 pl-10">
     <div className="flex flex-col text-firebrick ">
       <div className="flex flex-row sm:gap-10 gap-5 items-start justify-start lg:text-[50px] md:text-[35px] sm:text-[30px] text-[20px]">
-        <p className="[text-shadow:1px_0_0_#ff472e,_0_1px_0_#ff472e,_-1px_0_0_#ff472e,_0_-1px_0_#ff472e] mt-2 grotesk">{day}</p>
-        <h1 className=" antonio relative sm:top-0 top-[5px] font-bold ">
+        <p className="[text-shadow:1px_0_0_#ff472e,_0_1px_0_#ff472e,_-1px_0_0_#ff472e,_0_-1px_0_#ff472e] mt-2 lg:text-[50px] md:text-[35px] sm:text-[30px] text-[26px] grotesk">{day}</p>
+        <h1 className=" antonio relative sm:top-0 top-[8px] font-bold ">
           {heading}
         </h1>
       </div>
