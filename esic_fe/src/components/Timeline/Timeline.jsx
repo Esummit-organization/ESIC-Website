@@ -43,7 +43,7 @@ export function Timeline() {
         />
     </div> 
         <section className="flex flex-row justify-start items-start">
-            <div className="lg:h-[500.5px] lg:w-[800.6px] md:w-[650px] md:h-[400px] xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 sm:w-[475px] w-[330px] h-[250px] sm:h-72  left-[54px] relative">
+            <div className="lg:h-[500.5px] lg:w-[800.6px] md:w-[650px] md:h-[400px] xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 sm:w-[475px] w-[280px] h-[230px] sm:h-72  left-[54px] relative">
                 <img
                   className="absolute w-full h-full z-[1]"
                   alt=""
@@ -52,7 +52,7 @@ export function Timeline() {
             </div>
         </section>
             
-        <div className="flex flex-row justify-center items-center lg:pl-32 pl-2 py-11 lg:gap-8 gap-4">
+        <div className="flex flex-row justify-center items-center lg:pl-32 pl-4 py-11 lg:gap-8 gap-4">
             <img 
                 className=" lg:h-[170px] lg:w-[116.4px] md:h-[130px] md:w-[80px] sm:h-[90px] sm:w-[50px] h-[70px] w-[40px]" 
                 alt="esic-logo" 

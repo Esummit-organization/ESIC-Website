@@ -11,8 +11,8 @@ const EventTitles = ({ className = "", startupExpo, emptyRegisterInner, propMarg
   }, [propMargin]);
 
   return (
-    <div className={` bg-gray-100 box-border flex flex-row items-end justify-between sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[20px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[20px]  max-w-full gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio border-l-[4px] border-solid border-firebrick ${className}`}>
-      <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[130px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
+    <div className={` bg-gray-100 box-border flex flex-row items-end justify-between sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[15px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[15px]  max-w-full gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio sm:border-l-[4px] border-l-2 border-solid border-firebrick ${className}`}>
+      <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[138px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
         <b
           className=" relative tracking-[0.08em] leading-[122%] font-bold "
           style={startupExpoStyle}
