@@ -7,21 +7,22 @@ import arrow from "../../assets/timelineassets/arrow.png";
 
 
 export function Timeline() {
+
   return (
 
     <div className="w-full relative [background:linear-gradient(180deg,_#1c0f00_50%,_#000_81.64%)] py-14">
-        <div className=" pl-8  mb-14 flex flex-row   items-start justify-start gap-5">
-            <h1 className=" font-bold grotesk text-white text-6xl ">
+        <div className=" lg:pl-8 pl-6 mb-14 flex flex-row items-start justify-start gap-5">
+            <h1 className=" lg:font-bold grotesk text-white lg:text-6xl sm:text-5xl text-4xl">
                 Timeline
             </h1>
             <img
-                className="h-[75px] w-[75px] top-[-20px] relative  "
+                className="lg:h-[75px] lg:w-[75px] sm:h-14 sm:w-14 h-10 w-10 lg:top-[-20px] sm:top-[-10px] relative  "
                 loading="lazy"
                 alt=""
                 src={timelineimg}
             />
         </div>
-          
+        <div className='flex flex-col justify-start items-start xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 ml-0'> 
         <Titlle
             day="01"
             heading="Let the Entrepreneurship Spark ignite"
@@ -40,9 +41,9 @@ export function Timeline() {
             date="6th Feb,2025"
             edays={eventnames[0].day3}
         />
-
-        <section className="flex flex-row justify-center self-center">
-            <div className="h-[500.5px] w-[910.6px]  relative">
+    </div> 
+        <section className="flex flex-row justify-start items-start">
+            <div className="lg:h-[500.5px] lg:w-[800.6px] md:w-[650px] md:h-[400px] xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 sm:w-[475px] w-[330px] h-[250px] sm:h-72  left-[54px] relative">
                 <img
                   className="absolute w-full h-full z-[1]"
                   alt=""
@@ -51,18 +52,18 @@ export function Timeline() {
             </div>
         </section>
             
-        <div className="flex flex-row justify-center items-center pl-32 py-11  gap-8 ">
+        <div className="flex flex-row justify-center items-center lg:pl-32 pl-2 py-11 lg:gap-8 gap-4">
             <img 
-                className=" h-[170px]  w-[116.4px]" 
-                alt="" 
+                className=" lg:h-[170px] lg:w-[116.4px] md:h-[130px] md:w-[80px] sm:h-[90px] sm:w-[50px] h-[70px] w-[40px]" 
+                alt="esic-logo" 
                 src={union1} 
             />
-            <div className=" flex flex-col text-[40px] gap-4 text-tomato-100 grotesk ">
+            <div className=" flex flex-col lg:text-[45px] md:text-3xl sm:text-2xl text-lg lg:gap-2 md:gap-4 sm:gap-1 gap-0 text-tomato-100 grotesk ">
                 <h1 className=" font-normal  ">
-                    <p className="w-[700px] grotesk font-semibold text-start">And we will all be back next year !</p>
+                    <p className="lg:w-[700px] md:w-[450px] sm:w-[400px] w-[300px] md:leading-normal  leading-snug grotesk font-semibold ">And we will all be back next year !</p>
                 </h1>
-                <h3 className='text-2xl'>
-                    <p className='text-white w-[800px] poppins text-start'>with a bigger and much better <span className='text-tomato-100'>E-Summit</span> for you all!</p>
+                <h3 className='lg:text-2xl md:text-lg sm:text-sm text-[10px]'>
+                    <p className='text-white poppins '>with a bigger and much better <span className='text-tomato-100'>E-Summit</span> for you all!</p>
                 </h3>                 
             </div>
         </div>          
