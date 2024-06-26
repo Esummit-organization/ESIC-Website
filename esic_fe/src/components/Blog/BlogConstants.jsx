@@ -18,7 +18,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["Entrepreneurship", "startup","business"],
-      slug: ""
+      slug: "1"
     },
     {
       image_url:
@@ -29,6 +29,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["Entrepreneurship", "startup","business"],
+      slug:"2"
     },
     {
       image_url:
@@ -39,6 +40,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["startup","business"],
+      slug:"3"
     },
     {
       image_url:
@@ -49,6 +51,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["startup","business"],
+      slug:"4"
     },
     {
       image_url:
@@ -59,6 +62,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["startup","business"],
+      slug:"5"
     },
     {
       image_url:
@@ -69,6 +73,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["Entrepreneurship","business"],
+      slug:"6"
     },
     {
       image_url:
@@ -79,6 +84,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["Entrepreneurship","business"],
+      slug:"7"
     },
     {
       image_url:
@@ -89,6 +95,7 @@ export const blogs = [
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
       tags: ["Entrepreneurship", "startup"],
+      slug:"8"
     },
     {
       image_url:
@@ -98,7 +105,8 @@ export const blogs = [
         "Fixed-Power Designs:It's Not IF You Peek, It's what u peak at-9",
       blog_content:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate itaque omnis est molestias provident, nesciunt soluta vitae, quia earum maxime sapiente repellat debitis. Qui eum delectus eveniet molestias voluptates laudantium.",
-      tags: ["Entrepreneurship", "startup"]
+      tags: ["Entrepreneurship", "startup"],
+      slug:"9"
     },
 
   ];

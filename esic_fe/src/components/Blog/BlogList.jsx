@@ -27,31 +27,21 @@ function BlogPageTitle({ children }) {
 export function BlogList() {
     const [filteredBlogs, setFilteredBlogs] = useState(blogs);
     const [selectedFilter, setSelectedFilter] = useState("all");
-    console.log(typeof filteredBlogs,filteredBlogs);
     
 
-    const filterBlogs = (filter)=>{
-        console.log("the filter selected is :",filter);
-        
+    const filterBlogs = (filter)=>{       
             if(filter==="all"){
                 setSelectedFilter("all");
-                console.log(1);
                 setFilteredBlogs(blogs);
-                console.log(2);
             }
             else{
                 setSelectedFilter(filter);
-                console.log(3);
 
                     setFilteredBlogs(blogs.filter((blog)=>{
                         return blog.tags.some((tag) => tag === filter)
                     })
                     )
-                
-                console.log(4);
             }
-            console.log(5);
-        
     }
 
   return (
@@ -101,8 +91,9 @@ export function BlogList() {
             </div>
       <div className="grid grid-cols-1 bg-blog-50 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-8 lg:px-20 xl:px-40">
         {filteredBlogs.map((blog)=>{
+            let slug = blog.slug;
             return (
-                <Link to='#'><BlogListCard {...blog} ></BlogListCard></Link>             
+                <Link to={slug}><BlogListCard {...blog} ></BlogListCard></Link>             
             )
         })}
       </div>

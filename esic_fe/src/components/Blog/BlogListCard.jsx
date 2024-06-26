@@ -16,6 +16,7 @@ const BlogListCard = ({
   blog_content = "E-summit NITK blogs",
   tags = [""],
   horizontal = false,
+  slug="",
 }) => {
   const tagElements = tags.map((tag) => (
     <TagElement key={tag}>{tag}</TagElement>
