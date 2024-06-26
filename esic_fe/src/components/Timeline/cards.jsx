@@ -11,57 +11,51 @@ const EventTitles = ({ className = "", startupExpo, emptyRegisterInner, propMarg
   }, [propMargin]);
 
   return (
-    <div
-      className={`self-stretch bg-gray-100 box-border flex flex-row items-end justify-between pt-[19px] pb-[27px] pr-[57px] pl-[34px] max-w-full gap-[20px] text-left text-11xl text-gray-300 font-antonio border-l-[4px] border-solid border-firebrick lg:flex-wrap lg:pr-7 lg:box-border ${className}`}
-    >
-      <div className="h-[138px] w-[1126px] relative bg-gray-100 box-border hidden max-w-full border-l-[4px] border-solid border-firebrick" />
-      <div className="w-[630px] flex flex-col items-start justify-start gap-[29px] max-w-full">
+    <div className={` bg-gray-100 box-border flex flex-row items-end justify-between pt-[19px] pb-[27px] pr-[57px] pl-[34px] max-w-full gap-[20px] text-left text-11xl  text-gray-300 antonio border-l-[4px] border-solid border-firebrick lg:pr-7 lg:box-border ${className}`}>
+      <div className="w-[630px] lg:w-[560px] md:w-[200px] flex flex-col items-start justify-start gap-[29px] md:gap-[22px] max-w-full">
         <b
-          className="w-[414px] relative tracking-[0.12em] leading-[122%] font-bold inline-block [text-shadow:0px_0px_134.72px_#000] max-w-full z-[1] mq450:text-lg mq450:leading-[22px] mq825:text-5xl mq825:leading-[29px]"
+          className=" relative tracking-[0.08em] leading-[122%] font-bold lg:text-6xl-1 md:text-[22px]"
           style={startupExpoStyle}
         >
           {startupExpo}
         </b>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[39px] text-xl text-tomato-200 mq825:flex-wrap mq825:gap-[19px]">
+        
+        <div className=" flex flex-row md:flex-col lg:gap-2 items-start justify-start gap-[39px] text-xl lg:text-lg text-tomato-200  md:gap-1">
           <div className="w-[214px] flex flex-row items-start justify-start gap-[12px]">
-            <div className="flex flex-col items-start justify-start pt-px px-0 pb-0">
-              <img
-                className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
+            <img
+                className="w-6 h-6 md:w-4 md:h-4 relative overflow-hidden shrink-0 z-[1]"
                 alt=""
                 src={frame1}
-              />
-            </div>
-            <div className="flex-1 relative tracking-[0.12em] leading-[122%] [text-shadow:0px_0px_134.72px_#000] z-[1] mq450:text-base mq450:leading-[20px]">
+            />
+            <div className="flex-1 relative tracking-[0.1em] md:tracking-[0.01em] leading-[122%] mq450:text-base mq450:leading-[20px]">
               2:30 PM to 4:30 PM
             </div>
           </div>
-          <div className="flex-1 flex flex-row items-start justify-start gap-[11px] min-w-[180px] mq450:flex-wrap">
-            <div className="flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-              <img
-                className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
+
+          <div className=" flex flex-row items-start justify-start gap-[11px]">
+            <img
+                className="w-6 h-6 md:w-4 md:h-4 relative overflow-hidden shrink-0 z-[1]"
                 alt=""
                 src={frame2}
-              />
-            </div>
-            <div className="flex-1 relative tracking-[0.12em] leading-[122%] inline-block [text-shadow:0px_0px_134.72px_#000] min-w-[157px] z-[1] mq450:text-base mq450:leading-[20px]">
+            />
+            <div className="flex-1 relative tracking-[0.12em] md:tracking-[0.01em] leading-[122%] inline-block [text-shadow:0px_0px_134.72px_#000] min-w-[157px] z-[1] mq450:text-base mq450:leading-[20px]">
               Old sports complex, Nitk
             </div>
           </div>
         </div>
       </div>
-      <div className="w-[178px] flex flex-col items-start justify-end pt-0 px-0 pb-3 box-border">
-        <button className="cursor-pointer [border:none] pt-[15px] px-1 pb-3.5 bg-[transparent] self-stretch flex flex-row items-start justify-start relative">
-          <div className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-[58px] bg-gray-400 z-[1]" />
-          <div className="w-[137px] relative text-xl tracking-[0.09em] leading-[150.24%] font-gilroy-semibold text-white text-center inline-block shrink-0 z-[2] mq450:text-base mq450:leading-[24px]">
+
+      <div className="w-[178px]  md:w-[150px] flex flex-col items-start justify-between pt-0 px-0 mb-3 box-border">
+        <button className="w-full cursor-pointer [border:none] rounded-[58px] bg-gray-400 pt-[15px] pb-3.5 pl-7 flex flex-row gap-2 relative">
+          <div className="text-xl lg:text-[18px] md:text-[14px] tracking-[0.09em] leading-[150.24%] text-white poppins">
             Register
           </div>
-          <div className="flex flex-col items-start justify-start pt-0.5 px-0 pb-0 ml-[-15px]">
-            <img
-              className="w-6 h-6 relative overflow-hidden shrink-0 z-[3]"
-              alt=""
+          
+          <img
+              className="w-6 h-6 md:w-4 md:h-4 mt-1 "
+              alt="arrow"
               src={emptyRegisterInner}
-            />
-          </div>
+          />
         </button>
       </div>
     </div>
