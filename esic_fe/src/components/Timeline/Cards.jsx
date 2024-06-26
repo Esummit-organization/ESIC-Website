@@ -11,8 +11,8 @@ const EventTitles = ({ className = "", startupExpo, emptyRegisterInner, propMarg
   }, [propMargin]);
 
   return (
-    <div className={` bg-gray-100 box-border flex flex-row items-end justify-between pt-[19px] pb-[27px] pr-[57px] pl-[34px] max-w-full gap-[20px] text-left text-3xl  text-gray-300 antonio border-l-[4px] border-solid border-firebrick ${className}`}>
-      <div className="w-[630px]  flex flex-col items-start justify-start gap-[29px] max-w-full">
+    <div className={` bg-gray-100 box-border flex flex-row items-end justify-between sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[20px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[20px]  max-w-full gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio border-l-[4px] border-solid border-firebrick ${className}`}>
+      <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[130px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
         <b
           className=" relative tracking-[0.08em] leading-[122%] font-bold "
           style={startupExpoStyle}
@@ -20,39 +20,39 @@ const EventTitles = ({ className = "", startupExpo, emptyRegisterInner, propMarg
           {startupExpo}
         </b>
         
-        <div className=" flex flex-row items-start justify-start gap-[39px] text-lg text-tomato-200  md:gap-1">
-          <div className="w-[214px] flex flex-row items-start justify-start gap-[12px]">
+        <div className=" flex md:flex-row flex-col items-start justify-start lg:gap-[39px] md:gap-5 sm:gap-2 gap-1 lg:text-lg sm:text-[16px] text-[12px] text-tomato-200 ">
+          <div className="flex flex-row items-start justify-start lg:gap-3 gap-2">
             <img
-                className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
+                className="lg:w-6 lg:h-6 sm:w-5 sm:h-5 w-4 h-4 relative overflow-hidden shrink-0 z-[1]"
                 alt=""
                 src={frame1}
             />
-            <div className="flex-1 relative tracking-[0.1em] leading-[122%]">
+            <div className="flex-1 relative lg:tracking-[0.1em] sm:tracking-[0.01em] leading-[122%]">
               2:30 PM to 4:30 PM
             </div>
           </div>
 
-          <div className=" flex flex-row items-start justify-start gap-[11px]">
+          <div className=" flex flex-row items-start justify-start lg:gap-3 gap-2">
             <img
-                className="w-6 h-6 relative overflow-hidden shrink-0 z-[1]"
+                className="lg:w-6 lg:h-6 sm:w-5 sm:h-5 w-4 h-4 relative overflow-hidden shrink-0 z-[1]"
                 alt=""
                 src={frame2}
             />
-            <div className="flex-1 relative tracking-[0.12em] leading-[122%]  ">
+            <div className="flex-1 relative lg:tracking-[0.12em] sm:tracking-[0.01em] leading-[122%]  ">
               Old sports complex, Nitk
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-[178px]  flex flex-col items-start justify-between pt-0 px-0 mb-3 box-border">
-        <button className="w-full cursor-pointer [border:none] rounded-[58px] bg-gray-400 pt-[15px] pb-3.5 pl-7 flex flex-row gap-2 relative">
-          <div className="text-lg  tracking-[0.09em] leading-[150.24%] text-white poppins">
+      <div className="lg:w-[178px] sm:w-[130px] w-[120px] flex flex-col items-start justify-between pt-0 px-0 mb-3 box-border">
+        <button className="w-full cursor-pointer [border:none] rounded-[58px] bg-gray-400 pt-[15px] pb-3.5 lg:pl-7 pl-5 flex flex-row lg:gap-2 gap-1 relative">
+          <div className="lg:text-lg sm:text-base text-[12px] tracking-[0.09em] leading-[150.24%] text-white poppins">
             Register
           </div>
           
           <img
-              className="w-6 h-6 mt-1 "
+              className="lg:w-6 lg:h-6 sm:w-4 sm:h-4 w-3 h-3 mt-1 "
               alt="arrow"
               src={emptyRegisterInner}
           />

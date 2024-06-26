@@ -18,21 +18,21 @@ export default function LeftAlignedTimeline() {
         },
       }}
     >
-      <TimelineItem sx={{ minHeight: '900px' }}>
+      <TimelineItem sx={{ minHeight: '820px' }}>
         <TimelineOppositeContent color="textSecondary">
           
         </TimelineOppositeContent>
-        <TimelineSeparator sx={{ minHeight: '90px' }}>
+        <TimelineSeparator sx={{ minHeight: '0px' }}>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent></TimelineContent>
       </TimelineItem>
-      <TimelineItem sx={{ minHeight: '90px' }}>
+      <TimelineItem sx={{ minHeight: '0px' }}>
         <TimelineOppositeContent color="textSecondary">
           
         </TimelineOppositeContent>
-        <TimelineSeparator sx={{ minHeight: '90px' }}>
+        <TimelineSeparator sx={{ minHeight: '0px' }}>
           <TimelineDot />
         </TimelineSeparator>
         <TimelineContent></TimelineContent>
