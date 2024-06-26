@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(https://db.onlinewebfonts.com/c/91d3afe918937141b6ae8e43b1005bc8?family=Sharp+Grotesk+Book+25+Regular);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for paragraphs  */
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+/* for marque and card titles  */
+.antonio {
+	font-family: "Antonio", sans-serif;
+}
+
+/* for main Headings  */
+.grotesk {
+	font-family: "Sharp Grotesk Book 25 Regular";
+}
+/* Timeline styles */
+.Timeline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+  }
+  
+  .Timeline-item {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  .Timeline-item:last-child {
+	border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+   .Timeline {
+	  padding: 1rem;
+	}
+   .Timeline-item {
+	  margin-bottom: 1rem;
+	  padding: 0.5rem;
+	}
+  }
+  
+  @media (max-width: 480px) {
+   .Timeline {
+	  padding: 0.5rem;
+	}
+   .Timeline-item {
+	  margin-bottom: 0.5rem;
+	  padding: 0.2rem;
+	}
+  }
+  
+  /* Title styles */
+  .title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+   .title {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  @media (max-width: 480px) {
+   .title {
+	  font-size: 1.2rem;
+	}
+  }
+  
+  /* Cards styles */
+  .cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem;
+  }
+  
+  .Card {
+	margin: 1rem;
+	padding: 1rem;
+	width: calc(33.33% - 2rem);
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+   .Cards {
+	  padding: 1rem;
+	}
+   .Card {
+	  margin: 0.5rem;
+	  padding: 0.5rem;
+	  width: calc(50% - 1rem);
+	}
+  }
+  
+  @media (max-width: 480px) {
+   .cards {
+	  padding: 0.5rem;
+	}
+   .card {
+	  margin: 0.2rem;
+	  padding: 0.2rem;
+	  width: 100%;
+	}
+  }
