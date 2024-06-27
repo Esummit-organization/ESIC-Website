@@ -112,6 +112,9 @@ module.exports = {
       dimgray: "#59636b",
     },
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, #000 50%, #000 81.64%)',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
