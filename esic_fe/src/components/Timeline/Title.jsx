@@ -6,40 +6,58 @@ import LeftAlignedTimeline from "@/UI/timeline-line"
 import timeline from "../../assets/timelineassets/timeline.png"
 
 
-const Titlle = ({
+const Title = ({
     day,
     heading,
     date,
     edays
 }) => {
+
+  const dayStyle={
+    WebkitTextStroke: `0.5px #FF472E`,
+    color: `transparent`,
+    fontWeight: "bold",
+    fontStretch: "expanded",
+    letterSpacing: "0.1em",
+
+  }
+
   return (<>
   <div className="sm:pl-6 pl-10">
-    <div className="flex flex-col text-firebrick ">
-      <div className="flex flex-row sm:gap-10 gap-5 items-start justify-start lg:text-[50px] md:text-[35px] sm:text-[30px] text-[20px]">
-        <p className="[text-shadow:1px_0_0_#ff472e,_0_1px_0_#ff472e,_-1px_0_0_#ff472e,_0_-1px_0_#ff472e] mt-2 lg:text-[50px] md:text-[35px] sm:text-[30px] text-[26px] grotesk">{day}</p>
-        <h1 className=" antonio relative sm:top-0 top-[8px] font-bold ">
-          {heading}
-        </h1>
-      </div>
-  
-      <div className=" flex flex-row lg:gap-12 md:gap-9 sm:gap-7 gap-5 flex-wrap items-start justify-start  lg:text-[37px] sm:text-[28px] text-[18px]">
-        <h1 className="  text-lightpink mt-1 sm:ml-[-5px] ml-[-6px] font-normal grotesk">
-          day
-        </h1>      
-        <div className="whitespace-nowrap text-lightpink font-semibold  antonio ">
-          {date}
-        </div>
-      </div>
-    </div>
+<div className="flex flex-col space-y-4 lg:space-y-6">
+  <div className="flex flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-10">
+  <p className="mt-2 text-[20px] sm:text-[24px] md:text-[30px] lg:text-[40px] xl:text-[50px] grotesk flex flex-col items-center justify-center">
+    <span className='' style={dayStyle}>
+      {day}
+    </span>
+    <span className="text-lightpink mt-1 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[37px] font-normal grotesk">
+      day
+    </span>
+  </p>
+  <h1 className="text-firebrick antonio relative text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] xl:text-[60px] font-bold flex flex-col">
+    <span>
+      {heading}
+    </span>
+    <span className="whitespace-nowrap text-lightpink font-semibold text-[16px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[37px] antonio">
+      {date}
+    </span>
+  </h1>
+</div>
+
+
+
+</div>
+
+
   </div>
 
-  <div className=" flex flex-row  items-center justify-center">
+  <div className=" flex flex-row items-center justify-center">
     
-    <div className="flex flex-col  items-start justify-start px-0 pb-0 ">
-      <div className='flex flex-row '>
+    <div className="flex flex-col md:items-start md:justify-start mx-auto px-0 pb-0">
+      <div className='flex flex-row md:gap-0 gap-1'>
         <LeftAlignedTimeline/>
 
-          <div className=" relative md:mt-[90px] mt-[55px] flex flex-col items-start justify-start gap-[9px] max-w-full antonio">
+          <div className="w-fit md:mt-[90px] mt-[55px] flex flex-col md:items-start md:justify-start items-center gap-[9px] max-w-full antonio">
               
             <EventTitles
                 startupExpo={edays.name1}
@@ -75,4 +93,4 @@ const Titlle = ({
   )
 }
 
-export default Titlle;
+export default Title;
