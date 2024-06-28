@@ -46,7 +46,7 @@ const EventTitles = ({ time, location, title, registerLink}) => {
           </div>
           
           <img
-              className="lg:w-6 lg:h-6 sm:w-4 sm:h-4 w-3 h-3 mt-1 "
+              className="lg:w-6 lg:h-6 sm:w-4 sm:h-4 w-3 h-3 lg:mt-0 mt-1 "
               alt="arrow"
               src={frame27}
           />
