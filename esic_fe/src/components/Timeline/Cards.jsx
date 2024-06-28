@@ -7,7 +7,7 @@ const EventTitles = ({ time, location, title, registerLink}) => {
   
   return (
     <a href={registerLink}>
-    <div className={"w-[220px] xs:w-[280px] md:w-[580px] lg:w-[810px] md:max-w-full bg-gray-100 box-border flex flex-col md:flex-row md:items-end md:justify-between items-center justify-center mx-auto sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[15px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[15px] gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio sm:border-l-[4px] border-l-2 border-solid border-firebrick"}>
+    <div className={" xs:w-[100px] md:w-[580px] lg:w-[810px] md:max-w-full bg-gray-100 box-border flex flex-row md:items-end md:justify-between items-center justify-center mx-auto sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[15px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[15px] gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio sm:border-l-[4px] border-l-2 border-solid border-firebrick"}>
       <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[210px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
         <div
           className=" tracking-[0.08em] leading-[122%] font-bold "
@@ -40,14 +40,14 @@ const EventTitles = ({ time, location, title, registerLink}) => {
         </div>
       </div>
       
-      <div  className="lg:w-[178px] sm:w-[130px] w-[120px] md:flex md:flex-col items-start justify-between pt-0 px-0 mb-3 box-border hidden">
-        <button className="w-full cursor-pointer [border:none] rounded-[58px] bg-gray-400 pt-[15px] pb-3.5 lg:pl-7 pl-5 flex flex-row gap-1 relative">
-          <div className="lg:text-lg sm:text-base text-[12px] tracking-[0.09em] leading-[150.24%] text-white poppins">
+      <div  className="lg:w-[178px] md:w-[130px] w-[48px] md:flex md:flex-col items-start justify-between pt-0 px-0 mb-3 box-border ">
+        <button className="w-full [border:none] rounded-[58px] bg-gray-400 md:pt-[15px]  pt-3 pb-4 pl-4 lg:pl-7 md:pl-5  flex flex-row gap-1 relative">
+          <div className="lg:text-lg sm:text-base text-[12px] tracking-[0.09em] leading-[150.24%] text-white poppins md:block hidden">
             Register
           </div>
           
           <img
-              className="lg:w-6 lg:h-6 sm:w-4 sm:h-4 w-3 h-3 lg:mt-0 mt-1 "
+              className="lg:w-6 lg:h-6 w-4 h-4 lg:mt-0 mt-1 "
               alt="arrow"
               src={frame27}
           />
