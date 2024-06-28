@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import timelineimg from '@/assets/timelineassets/frame.svg';
-import { eventnames } from '@/constants/timelineconstants';
+import { eventnames } from '@/constants/timeline';
 import union1 from "@/assets/timelineassets/union-1.svg";
 import arrow from "../../assets/timelineassets/arrow.png";
 
@@ -23,24 +23,9 @@ export function Timeline() {
             />
         </div>
         <div className='flex flex-col justify-start mx-auto items-start xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 ml-0'> 
-        <Title
-            day="01"
-            heading="Let the Entrepreneurship Spark ignite"
-            date="4th Feb,2025"
-            edays={eventnames[0].day1}
-        />
-        <Title
-            day="02"
-            heading="Will you survive in the market?"
-            date="5th Feb,2025"
-            edays={eventnames[0].day2}
-        />
-        <Title
-            day="03"
-            heading="May the unicorn always be in the sky"
-            date="6th Feb,2025"
-            edays={eventnames[0].day3}
-        />
+        {eventnames.map((data, index) => (
+          <Title key={index} {...data} />
+        ))}
     </div> 
         <section className="flex flex-row justify-start items-start">
             <div className="lg:h-[500.5px] lg:w-[800.6px] md:w-[650px] md:h-[400px] xl:ml-40 lg:ml-24 md:ml-10 sm:ml-4 sm:w-[475px] w-[240px] h-[230px] sm:h-72  left-[54px] relative">
