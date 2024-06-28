@@ -36,7 +36,7 @@ const ReviewCard = ({ img, name, position, url }) => {
 
 export function Speakers() {
     return (
-        <div className="bg-gradient-to-br to-background-900 from-hero-50 dark:from-background">
+        <div className="bg-gradient-to-bl to-hero-50 from-background-900 dark:from-background">
             <div className="px-4 md:px-14 pt-10">
             <h1 className='text-[40px] md:text-8xl text-white grotesk bg-gradient-to-t from-gray-800 to-white text-transparent bg-clip-text'>Speakers</h1>
             <div className="flex items-center">
