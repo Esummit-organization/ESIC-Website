@@ -8,7 +8,7 @@ const EventTitles = ({ time, location, title, registerLink}) => {
   return (
     <a href={registerLink}>
     <div className={" xs:w-[100px] md:w-[580px] lg:w-[810px] md:max-w-full bg-gray-100 box-border flex flex-row md:items-end md:justify-between items-center justify-center mx-auto sm:pt-[19px] sm:pb-[27px] py-[23px] lg:pr-[57px] sm:pr-[40px] pr-[15px] sm:ml-[0] ml-[-30px] sm:pl-[34px] pl-[15px] gap-[20px] text-left lg:text-3xl sm:text-2xl text-xl text-gray-300 antonio sm:border-l-[4px] border-l-2 border-solid border-firebrick"}>
-      <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[210px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
+      <div className="xl:w-[630px] lg:w-[500px] md:w-[350px] sm:w-[230px] w-[150px] flex flex-col items-start justify-start md:gap-[29px] sm:gap-5 gap-3 max-w-full">
         <div
           className=" tracking-[0.08em] leading-[122%] font-bold "
         >
