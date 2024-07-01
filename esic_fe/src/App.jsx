@@ -5,6 +5,7 @@ import './App.css';
 // Page Imports 
 import { Home } from './Pages/Home/Home';
 import { Blogs } from './Pages/Blogs/Blogs';
+import { BlogPost } from './Pages/Blogs/BlogPost'
 
 // Component Imports 
 import { Navbar } from './components/Navbar/Navbar';
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/blogs' element={<Blogs />} />
+            <Route path='/blogs/:slug' element={<BlogPost />} />
           </Routes>
         <Footer />
         

@@ -1,9 +1,10 @@
 import React from "react";
 
-export function Blog() {
+export function Blog({slug}) {
     return (
         <div>
-            Blog
+            Hello world
+            the slug for this blog is {slug}
         </div>
     );
     }

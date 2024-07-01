@@ -83,7 +83,11 @@ module.exports = {
       },
       sponsor: {
         50: "#56ACFF"
-      }
+      },
+      blog: {
+        50: "#060d14",
+        100: "#102132",
+      },
     },
     extend: {
       keyframes: {
