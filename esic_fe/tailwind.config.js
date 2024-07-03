@@ -88,8 +88,36 @@ module.exports = {
         50: "#060d14",
         100: "#102132",
       },
+      tomato: {
+        "100": "#ff472e",
+        "200": "rgba(255, 71, 46, 0.9)",
+      },
+      gainsboro: {
+        "100": "#d9d9d9",
+        "200": "rgba(217, 217, 217, 0.1)",
+      },
+      silver: {
+        "100": "#bfbfbf",
+        "200": "#bbb7b2",
+      },
+      gray: {
+        "100": "#2f1a00",
+        "200": "rgba(255, 255, 255, 0.7)",
+        "300": "rgba(255, 255, 255, 0.9)",
+        "400": "rgba(255, 255, 255, 0.3)",
+        "500": "rgba(255, 255, 255, 0.5)",
+        "800":  "#454545",
+      },
+      darkgray: "#a2a2a2",
+      firebrick: "#aa321c",
+      lightpink: "#ffabab",
+      darkslategray: "#333c45",
+      dimgray: "#59636b",
     },
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, #000 50%, #000 81.64%)',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
