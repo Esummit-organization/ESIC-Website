@@ -15,10 +15,10 @@ export function Home() {
             <About />
             <Events />
             <Speakers />
-            <Timeline />
             <Sponsors />
             <FAQ />
-            <GetTickets />
+            {/* <GetTickets /> */}
+            <Timeline />
         </div>
     );
     }
