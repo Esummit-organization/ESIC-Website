@@ -1,0 +1,16 @@
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.hero-section-div > div {
+		display: none;
+	}
+
+	.hero-section-div {
+		background: url("../../../public/hero/mobile.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
