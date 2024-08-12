@@ -13,18 +13,16 @@ import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
-      <div className=' bg-background-150 h-screen text-white'>
-        <Navbar/>
+      <div className='h-screen text-white bg-background-150'>
+        <div className=''>
+          <Navbar/> 
+        </div>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/blogs' element={<Blogs />} />
             <Route path='/blogs/:slug' element={<BlogPost />} />
           </Routes>
         <Footer />
-        
-        {/* <MarqueScroll className="bg-background-500" text={"E-SUMMIT The Festival "} angle={-2} /> */}
-        {/* <MarqueScroll className="bg-background-500" text={"Events. "} angle={0} /> */}
-        {/* <MarqueScroll className="bg-background-500" text={"Speakers. "} angle={0} /> */}
       </div>
   );
 }

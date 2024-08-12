@@ -13,6 +13,6 @@ export const options =[
     },
     {
         name: "BLOG",
-        to: "/blog"
+        to: "/blogs"
     },
 ]

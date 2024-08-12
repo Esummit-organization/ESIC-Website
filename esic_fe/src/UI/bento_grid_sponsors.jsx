@@ -33,12 +33,20 @@ const BentoCard = ({
   href,
   cta,
 }) => (
+  // bg-gradient-to-br from-[#060d14] to-[#102132]
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-3xl border-2 border-sponsor-50 items-center ",
+      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-3xl items-center ",
       // light styles
-      "bg-gradient-to-br from-[#060d14] to-[#102132] [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+      // background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+      // background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+      // background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+      // background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+      // bg-gradient-to-tr to-[#231557]  from-[#FF1361] 
+      " bg-card-bg",
+      // "bg-gradient-to-tl from-[#891101] to-[#010002]  [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
       // dark styles
       "transform-gpu dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
       "h-[18rem]",
@@ -52,7 +60,7 @@ const BentoCard = ({
         <h3 className={`"antonio ${className == titleSponserStyles ? `text-[3.5rem] sm:text-[6.8rem]` : `text-[3.5rem]`} font-semibold text-gray-300 dark:text-gray-200"`}>
           {name}
         </h3>
-        <p className={`max-w-lg text-sponsor-50 ${className == titleSponserStyles ? `text-[1.5rem] sm:text-[2.5rem]` : `text-[1.5rem]`}`}>{description}</p>
+        <p className={`max-w-lg text-white ${className == titleSponserStyles ? `text-[1.5rem] sm:text-[2.5rem]` : `text-[1.5rem]`}`}>{description}</p>
       </div>
     </div>
 

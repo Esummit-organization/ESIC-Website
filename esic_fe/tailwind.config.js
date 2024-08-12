@@ -44,7 +44,7 @@ module.exports = {
         300: "#ff814d",
         400: "#ff5d1a",
         500: "#e64400",
-        600: "#b33500",
+        600: "#f9452e",
         700: "#802600",
         800: "#4d1700",
         900: "#1a0800",
@@ -116,7 +116,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, #000 50%, #000 81.64%)',
+        'custom-bg': 'rgb(255,231,185)',
+        'custom-bg': 'linear-gradient(180deg, rgba(255,231,185,1) 0%, rgba(255,231,185,1) 0%, rgba(255,231,185,1) 8%, rgba(255,231,185,1) 16%, rgba(250,202,111,1) 30%, rgba(255,159,80,1) 44%, rgba(255,138,75,1) 58%, rgba(129,62,27,1) 78%, rgba(0,0,0,1) 100%)',
+        "card-bg": "linear-gradient(to right bottom, #522503, #6a320a, #823f0f, #9c4e15, #b65c1a, #c36825, #d0732f, #dd7f39, #df8a49, #e19459, #e39e69, #e4a879);"
+      
       },
+      
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

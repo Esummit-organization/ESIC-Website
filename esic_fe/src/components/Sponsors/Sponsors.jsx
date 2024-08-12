@@ -12,20 +12,19 @@ import {
 import { features } from "@/constants/sponsors";
 import Sponsors_revealSVG from "@/assets/svgs/sponsors_reveal.svg"
 
-
+// bg-gradient-to-br to-background-900 from-hero-50
 export function Sponsors() {
     return (
 
-        <div className="bg-gradient-to-br to-background-900 from-hero-50 dark:from-background">
-            <div className="px-4 md:px-14 pt-10">
-                <h1 style={{ WebkitBackgroundClip: 'text' }} className='text-[40px] md:text-8xl text-white grotesk bg-gradient-to-t from-gray-800 to-white text-transparent bg-clip-text'>Sponsors</h1>
-                <div className="flex items-center">
-                    <hr className='w-20 border-t-2 border-[#006DD5] ' />
-                    <p className="poppins text-[11px] md:text-xl ml-1 mr-1 md:mx-3 my-1 text-[#006DD5]">View all Sponsors</p>
-                    <a href='#'><div className='flex items-center justify-center rounded-full bg-gray-800'><IconArrowUpRight color='white' size={20} /></div></a>
-                </div>
+        <div className=" dark:from-background">
+            <div className="px-4 md:px-14 pt-10 flex justify-center items-center">
+              <h1 className='text-[40px] md:text-[56px] text-[#292929] roobert-bold flex items-center justify-center text-center mb-20 mt-20'>Sponsors</h1>
+              <img
+                className=" md:max-w-[100px] md:w-[50px] md:flex hidden hover:scale-1.2"
+                src="sponsor.svg"
+                alt="foreground"
+            />
             </div>
-
             <div className="relative w-full flex justify-center">
                 <div>
                     <BentoGrid className="grid-rows-1 md:grid-rows-3  py-10 ">

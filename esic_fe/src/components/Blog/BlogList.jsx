@@ -15,8 +15,8 @@ import { IconFilter } from "@tabler/icons-react";
 function BlogPageTitle({ children }) {
   return (
     <h1
-      className="p-8 lg:px-20 xl:px-40 bg-blog-50 text-3xl tracking-wider relative hover:tracking-widest cursor-pointer
-                  transition-all hover:text-sponsor-50
+      className="p-8 lg:px-20 xl:px-40  text-3xl tracking-wider relative hover:tracking-widest cursor-pointer
+                  transition-all text-background-950 hover:text-background-700
                   "
     >
       {children}
@@ -45,19 +45,19 @@ export function BlogList() {
     }
 
   return (
-    <div className="pb-8 bg-blog-50">
+    <div className="pb-8 bg-background-150">
       <BlogPageTitle>Featured</BlogPageTitle>
 
-      <div className="px-8 lg:px-20 xl:px-40 bg-blog-50">
+      <div className="px-8 lg:px-20 xl:px-40 ">
         <BlogListCard {...featuredCard} horizontal />
       </div>
 
-        <div className="bg-blog-50 flex justify-between pr-8 lg:pr-20 xl:pr-40">
+        <div className=" flex justify-between pr-8 lg:pr-20 xl:pr-40">
       <BlogPageTitle>Recent Blogs</BlogPageTitle>
       
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-            <button className="flex items-center gap-2 m-2 hover:text-sponsor-50 h-30 text-lg outline-none">
+            <button className="flex items-center gap-2 m-2 hover:text-background-950 h-30 text-lg outline-none">
                 <IconFilter></IconFilter>
                 {selectedFilter === "all" ? "All" : selectedFilter}
             </button>
@@ -80,7 +80,7 @@ export function BlogList() {
            
         </div>
 
-        <div className="bg-blog-50 text-center text-xl">
+        <div className="text-center text-xl">
           {     
                 !filteredBlogs.length && (
                     <div className="text-gray-400 py-10">
@@ -89,7 +89,7 @@ export function BlogList() {
                 )
             } 
             </div>
-      <div className="grid grid-cols-1 bg-blog-50 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-8 lg:px-20 xl:px-40">
+      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-8 lg:px-20 xl:px-40">
         {filteredBlogs.map((blog)=>{
             let slug = blog.slug;
             return (
@@ -97,15 +97,6 @@ export function BlogList() {
             )
         })}
       </div>
-
-      {/* <div className="grid place-items-center p-8 bg-gradient bg-gradient-to-tr from-blog-50 to-blog-100">
-        <Link
-          to="#"
-          className="text-sm border p-4 hover:bg-white hover:text-blog-50 transition"
-        >
-          Load More...
-        </Link>
-      </div> */}
     </div>
   );
 }

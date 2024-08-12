@@ -27,11 +27,11 @@ export  function About() {
       : { height: "12rem", width: "12rem" };
 
   return (
-    <div className="main  ">
-      <div className="flex flex-col justify-center items-center h-full bg-background-150">
-        <div className="md:text-center pl-6 text-4xl mt-10 font-bold text-secondary-600 grotesk">What is E-Summit?</div>
-        <div className="md:mt-5 md:mr-[25px] md:text-lg flex flex-col items-center mt-5">
-          <p className="md:text-lg text-gray-800 md:w-[49rem] w-[320px] md:text-center md:p-5 sm:p-0 pl-3 poppins">
+    <div className="main ">
+      <div className="flex flex-col justify-center items-center h-full">
+        <div className="md:text-center pl-6 md:text-[56px] text-4xl mt-10 font-bold text-[#292929] roobert-bold">About E-Summit</div>
+        <div className="md:mt-5 md:mr-[25px] md:text-lg flex flex-col items-center justify-center mt-5">
+          <p className="md:text-lg text-gray-800 md:w-[49rem] w-[320px] md:text-center md:p-5 sm:p-0 md:pl-0 pl-3 poppins flex items-center justify-center mx-auto">
           {content[0].description}
           </p>
           <div className="mt-20 flex justify-center">
@@ -41,7 +41,7 @@ export  function About() {
                   className="md:absolute md:top-0 md:left-0 md:w-full md:h-full w-[280px] h-[200px] rounded-lg shadow-lg transition-transform transform hover:scale-105 "
                   src={`https://www.youtube.com/embed/jva0G7211l4?autoplay=1&rel=0&showinfo=0&modestbranding=1`}
                   title="E-Summit 2024"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; mute"
                   allowFullScreen
                 >
                 </iframe>
